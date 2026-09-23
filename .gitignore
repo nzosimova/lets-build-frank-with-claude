@@ -4,6 +4,8 @@ node_modules/
 dist/
 build/
 *.tsbuildinfo
+# A console copied in for local testing; the image builds its own from ui/.
+server/public/
 
 # Local environment. Nothing here belongs in the repo; the class credential
 # lives in a GitHub Actions secret (ADR-010), never in a file.

@@ -1,0 +1,11 @@
+{
+  // Type-checks tests as well as source. `npm test` runs this before vitest,
+  // because vitest transpiles without checking types and `tsc` (the build)
+  // only looks at src/ — without this, a broken test file compiles silently.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts"]
+}
